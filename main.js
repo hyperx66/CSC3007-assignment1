@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  document.getElementById("timeUpdated").innerText = "Last Updated On: " + moment().format('DD MMMM YYYY, h:mm a');
   var multiArr = [];
   var regions = ["west", "national", "east", "central", "south", "north"];
   var tableObj = $("#myTable").DataTable();
